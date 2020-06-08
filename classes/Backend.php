@@ -13,4 +13,16 @@ class Backend extends Employee {
         $this->salary = $_salary;
         $this->working_days = $_working_days;
     }
+    public function salaryMonth($salary, $working_days) {
+        if (! is_int($salary)) {
+            throw new Exception ('salary must be an integer');
+        }
+        return $salary * $working_days;
+    }
+}
+
+try {
+    echo salaryMonth($salary, $working_days);
+} catch (Exception $e) {
+    echo $e->getMessage;
 }

@@ -1,8 +1,4 @@
 <?php
-/****************************************************************
- * Create and model classes to manage employees of a company.   *
- * Enter at least one example of using exceptions               *
- ***************************************************************/
 
 class Employee {
     public freshman;

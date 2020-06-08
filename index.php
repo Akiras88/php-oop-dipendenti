@@ -1,3 +1,8 @@
+<?php 
+include_once __DIR__ . '/classes/Frontend.php';
+include_once __DIR__ . '/classes/Backend.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
