@@ -1,6 +1,18 @@
 <?php 
-include_once __DIR__ . '/classes/Frontend.php';
-include_once __DIR__ . '/classes/Backend.php';
+include_once __DIR__ . '/classes/employee/frontendEmployee.php';
+include_once __DIR__ . '/classes/employee/backendEmployee.php';
+
+
+var_dump($employees_front);
+var_dump($employees_back);
+
+try {
+    echo salaryMonth($salary, $working_days);
+} catch (Exception $e) {
+    echo $e->getMessage;
+}
+
+
 ?>
 
 <!DOCTYPE html>
